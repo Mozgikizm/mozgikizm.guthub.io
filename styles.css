@@ -1,4 +1,4 @@
-2 body {
+body {
     margin: 0;
     height: 100%;
 }
@@ -24,8 +24,8 @@
     color: white;
     padding: 20px;
     text-align: center; 
-
 }
+
 .button1 {  
     position: absolute;
     background-color: black; 
@@ -53,11 +53,25 @@
     border: none;
 }
 
+.prava {
+    font-size: x-large;
+    position: absolute;
+    top: 95%;
+    left: 37%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px; 
+    text-shadow: 1px 1px 2px rgb(247, 4, 4); 
+    border-radius: 52px; 
+    text-align: center;
+    margin-top: 0; 
 
+}
 
 .button1:hover {
     background-color: darkorange; 
 }
+
 .button2:hover {
     background-color: darkorange; 
 }
