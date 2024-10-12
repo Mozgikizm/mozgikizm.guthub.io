@@ -26,29 +26,6 @@
     <form action="lazerka.html" method="get">
         <button type="submit" class="button1">Да, конечно</button> 
     </form>
-    <button class="button2" onclick="playVideo()">Нет, пошел ты нахуй</button>
-
-    <video id="myVideo" controls>
-        <source src="1.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
-    </video>
-
-    <script>
-        function playVideo() {
-            const video = document.getElementById('myVideo');
-            video.style.display = "block"; // 
-            video.volume = 1.0; 
-            video.play(); 
-
-			alert('СЫН ШЛЮХИ ИДИ НАХУЙ');
-			
-            video.requestFullscreen().catch(err => {
-                console.error("Ошибка при переходе в полноэкранный режим:", err);
-            });
-
-
-            
-        }
-    </script>
+    <button class="button2">Нет, пошел ты нахуй</button>
 </body>
 </html>
