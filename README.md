@@ -1,1 +1,0 @@
-# mozgikizm.guthub.io
