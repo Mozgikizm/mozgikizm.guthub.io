@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.background {
+
+    
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('zombatka.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 0; 
+    
+}
+.timer {
+    background-image: url('bro.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(228, 128, 228);
+    font-size: x-large;
+    font-style:unset;
+    z-index: 1;
+}
