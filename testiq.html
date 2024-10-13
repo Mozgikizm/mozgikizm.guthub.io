@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на дауна</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="test-container">
+        <h1>Тест на дауна</h1>
+        <form id="quizForm">
+        
+            <div class="question">
+                <p>1. Что ты хотел бы от жизни</p>
+                <label>
+                    <input type="radio" name="q1" value="0"> Нихуя, заебалось жить
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="7"> Налупить детей и жалеть об этом
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="10"> Поклоняться иисусу
+                </label>
+            </div>
+
+           
+            <div class="question">
+                <p>2. Какой исполнитель твой любимый</p>
+                <label>
+                    <input type="radio" name="q2" value="1"> 9MICE
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="0"> KAI ANGEL
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="10"> Scally milano
+                </label>
+            </div>
+
+           
+            <div class="question">
+                <p>3. Что с этого тебе ты хотел бы сделать?</p>
+                <label>
+                    <input type="radio" name="q3" value="10"> Пойти на войну
+                </label>
+                    <label>
+                    <input type="radio" name="q3" value="2"> Играть в игры
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="10"> Найти РАБоту и пахать
+                </label>
+            </div>
+
+           
+            <button type="button" onclick="calculateResult()">УЗНАТЬ ДАУН ЛИ ТЫ</button>
+        </form>
+
+     
+        <div id="result"></div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
