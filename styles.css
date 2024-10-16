@@ -38,6 +38,9 @@ body {
     border-radius: 5px; 
     cursor: pointer;
     text-decoration: none; 
+  
+    transition: background-color 0.5s ease, transform 0.5s ease ;
+  
 }
 .button3 { position: absolute; 
     background-color: black; 
@@ -49,6 +52,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     border: none; 
+    transition: background-color 0.5s ease, transform 0.5s ease ;
 }
 
 .button2 {
@@ -62,6 +66,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    transition: background-color 0.5s ease, transform 0.5s ease ;
 }
 
 .button4 {
@@ -71,12 +76,13 @@ body {
     font-size: x-large;
     color: purple;
     z-index: 0;
-    left: 50%;
-    transform: translate(-400px, 235px); 
+    left: 29%;
+    top: 40%;
     padding: 15px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease ;
 }
 
 .prava {
@@ -96,14 +102,19 @@ body {
 
 .button1:hover {
     background-color: darkorange; 
+    transform: scale(1.2);
+
 }
 
 .button2:hover {
     background-color: darkorange; 
+    transform: scale(1.2);
 }
 .button3:hover {
     background-color: darkorange;
+    transform: scale(1.2);
 }
 .button4:hover {
     background-color: darkorange;
+    transform: scale(1.2);
 }
