@@ -84,7 +84,22 @@ body {
     cursor: pointer;
     transition: background-color 0.5s ease, transform 0.5s ease ;
 }
-
+.button5 {
+  position: absolute;
+  padding: 15;
+  font-size: x-large;
+  width: 150px;
+  height: 5vh;
+  left: 46%;
+  top: 25%;
+  background-color: black;
+  border-radius: 5px;
+  color: purple;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+    
+}
 .prava {
     font-size: x-large;
     position: absolute;
@@ -115,6 +130,10 @@ body {
     transform: scale(1.2);
 }
 .button4:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+.button5:hover {
     background-color: darkorange;
     transform: scale(1.2);
 }

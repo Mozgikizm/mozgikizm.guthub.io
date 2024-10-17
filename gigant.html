@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колесо но не экстази</title>
+    <link rel="stylesheet" href="gigant.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wheel-container">
+        <canvas id="wheel" width="500" height="500"></canvas>
+        <button id="spin-button">Спин</button>
+        <div id="result" class="result"></div>
+
+        <div class="controls">
+            <label for="num-segments">Кол-во блоков:</label>
+            <input type="number" id="num-segments" min="2" value="2">
+            <label for="segment-labels">Вводить через запятую:</label>
+            <textarea id="segment-labels">Да,Нет</textarea>
+            <button id="update-wheel">Обновить колесо</button>
+        </div>
+    </div>
+
+    <script src="koleso.js"></script>
+</body>
+</html>

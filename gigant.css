@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+}
+.background {
+ 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('ghoul.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1; 
+    
+}
+.wheel-container {
+    position: relative;
+    text-align: center;
+    
+}
+
+#spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    background-color: darkred;
+    width: 120px;
+    height: 5vh;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #4ef70b;
+    font-weight: bold;
+}
+
+.controls {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+.controls textarea, .controls input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#update-wheel {
+    padding: 10px 20px;
+    font-size: 16px;
+ border-radius: 5px;
+ border: none;
+ background-color: darkred;
+}
+#update-wheel:hover{
+    background-color: darkorange;
+}
+#spin-button:hover {
+    background-color: darkorange;
+}
