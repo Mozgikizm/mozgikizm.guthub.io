@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос</title>
+    <link rel="stylesheet" href="razeb.css"> 
+</head>
+<body>
+    <div class="background"></div> 
+
+    
+    <div class="survey-container">
+        <div class="survey" id="survey">
+            <h1>после прохождения будет разъеб</h1>
+            <form id="surveyForm">
+                <p>Топ 1 игроки на свл?</p>
+                
+                <label>
+                    <input type="radio" name="answer" value="yes"> softik,nevroxz
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="answer" value="no"> scalevillian, alpheratz, flash
+                </label>
+                <br><br>
+                
+                <button type="submit">сохранить</button>
+            </form>
+
+            <p id="result"></p> 
+            <p>ТЫ НАБРАЛ??: <span id="score">0</span></p> 
+        </div>
+    </div>
+
+   
+    <div id="notification" class="notification" style="display: none;">
+        <p>У ВАС ЕСТЬ ДОСТУП К РАЗЪЕБУ!</p>
+        <button id="checkButton">чекнуть</button>
+    </div>
+
+   
+    <div id="videoContainer" style="display: none;">
+        <video id="razebVideo" width="100%" height="100%" controls autoplay>
+            <source src="razeb.mp4" type="video/mp4">
+            лох ты.
+        </video>
+    </div>
+    
+    <script src="razeb.js"></script>
+</body>
+</html>

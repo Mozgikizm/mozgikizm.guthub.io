@@ -100,6 +100,22 @@ body {
   transition: background-color 0.5s ease, transform 0.5s ease;
     
 }
+.button6{
+    position:relative;
+    left: 45%;
+    top: 250px;
+ border:none;
+ font-size: x-large;
+ padding: 15;
+ height: 6vh;
+ width: 150px;
+ background-color: black;
+ border-radius: 5xp;
+ color: purple;
+ cursor: pointer;
+ transition: background-color 0.5s ease, transform 0.5s ease;
+    
+}
 .prava {
     font-size: x-large;
     position: absolute;
@@ -136,4 +152,9 @@ body {
 .button5:hover {
     background-color: darkorange;
     transform: scale(1.2);
+}
+.button6:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+    
 }
