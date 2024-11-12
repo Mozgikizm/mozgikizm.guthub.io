@@ -71,7 +71,7 @@ body {
 }
 
 .menu-button:hover {
-    background-color: darkorange;
+    background-color: rgb(147, 78, 167);
     transform: scale(1.1);
 }
 

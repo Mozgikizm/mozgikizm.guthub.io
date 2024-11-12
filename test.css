@@ -36,9 +36,11 @@ h1 {
     color: purple;
     font-size: large;  
 }
+
 .lol {
     font-size: large; 
 }
+
 .question {
     margin-bottom: 15px;  
     color: rgb(109, 17, 17);
@@ -74,5 +76,49 @@ button:hover {
     font-size: 16px;  
     font-weight: bold;
     text-align: center;
-    color: rgb(41, 2, 26);
+    color: rgb(116, 2, 72);
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#resultContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#resultText {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#resultImage {
+    width: 50vw;  
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#closeResult {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#closeResult:hover {
+    background-color: darkred;
 }
