@@ -1,121 +1,93 @@
 body {
     margin: 0;
     height: 100%;
+    overflow: HIDDEN;
 }
 
 .background {
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('akame.jpg'); 
+    background-image: url('akame.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 0; 
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.forvibe {
+    position: absolute;
+    text-align: center;
+    left: 44%;
+}
+
+#lol {
+    padding: 10px 20px;
+    background-color: black;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 170px;
+    height: 5vh;
+    transition: background-color 0.5s ease;
+}
+
+#lol:hover {
+    background-color: black;
+}
+
+.menu-button {
+    background-color: black;
+    color: purple;
+    font-size: large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.menu-button:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
 }
 
 .mutka {
     position: relative;
     font-weight: bold;
     font-size: xx-large;
-    z-index: 1; 
-    color: white;
+    z-index: 1;
+    color: rgb(0, 0, 0);
     padding: 20px;
-    text-align: center; 
+    text-align: center;
+    margin-top: 100px;
 }
 
-.button1 {  
-    position: absolute;
-    background-color: black; 
-    color: purple; 
-    margin-left: 550px;
-    font-size: x-large;
-    margin-top: -8px;
-    padding: 15px;
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
-    text-decoration: none; 
-  
-    transition: background-color 0.5s ease, transform 0.5s ease ;
-  
-}
-.button3 { position: absolute; 
-    background-color: black; 
-    color: purple; 
-    font-size: x-large;
-    padding: 15px;
-    margin-left: 1100px; 
-   bottom: 55%;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none; 
-    transition: background-color 0.5s ease, transform 0.5s ease ;
-}
 
-.button2 {
-    position: absolute; 
-    background-color: black; 
-    color: purple; 
-    font-size: x-large;
-    padding: 15px;
-    margin-left: 1100px; 
-    margin-top: -10px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.5s ease, transform 0.5s ease ;
-}
 
-.button4 {
-    position: absolute; 
-    background-color: black;
-    width: 150px;
-    font-size: x-large;
-    color: purple;
-    z-index: 0;
-    left: 29%;
-    top: 40%;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.5s ease, transform 0.5s ease ;
-}
-.button5 {
-  position: absolute;
-  padding: 15;
-  font-size: x-large;
-  width: 150px;
-  height: 5vh;
-  left: 46%;
-  top: 25%;
-  background-color: black;
-  border-radius: 5px;
-  color: purple;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.5s ease, transform 0.5s ease;
-    
-}
-.button6{
-    position:relative;
-    left: 45%;
-    top: 250px;
- border:none;
- font-size: x-large;
- padding: 15;
- height: 6vh;
- width: 150px;
- background-color: black;
- border-radius: 5xp;
- color: purple;
- cursor: pointer;
- transition: background-color 0.5s ease, transform 0.5s ease;
-    
-}
 .prava {
     font-size: x-large;
     position: absolute;
@@ -123,38 +95,9 @@ body {
     left: 37%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px; 
-    text-shadow: 1px 1px 2px rgb(247, 4, 4); 
-    border-radius: 52px; 
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgb(247, 4, 4);
+    border-radius: 52px;
     text-align: center;
-    margin-top: 0; 
-
-}
-
-.button1:hover {
-    background-color: darkorange; 
-    transform: scale(1.2);
-
-}
-
-.button2:hover {
-    background-color: darkorange; 
-    transform: scale(1.2);
-}
-.button3:hover {
-    background-color: darkorange;
-    transform: scale(1.2);
-}
-.button4:hover {
-    background-color: darkorange;
-    transform: scale(1.2);
-}
-.button5:hover {
-    background-color: darkorange;
-    transform: scale(1.2);
-}
-.button6:hover {
-    background-color: darkorange;
-    transform: scale(1.2);
-    
+    margin-top: 0;
 }
