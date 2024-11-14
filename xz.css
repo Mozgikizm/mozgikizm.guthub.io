@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+  
+  .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 0;
+    background-image: url('xz.jpg'); 
+  }
+  
+  .viber {
+    position: relative;
+    font-size: x-large;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(0, 255, 0, 1), rgba(0, 0, 255, 1));
+    -webkit-background-clip: text;
+    left: 444px;
+    top: 35%;
+    color: transparent; 
+  }

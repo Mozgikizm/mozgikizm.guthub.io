@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.background {
+    position: fixed;
+    background-image: url('hah.jpg'); 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kak {
+    position: relative;
+    font-size: x-large;
+    color: grey;
+    z-index: 1; 
+}
+.kakk:hover {
+    transform: scale(1.1);
+}
+
+
+.kakk {
+    position: relative;
+    font-size: x-large;
+    color: grey;
+    z-index: 1; 
+    lefT: 40%;
+    transition: transform 0.5s ease;
+}
+.kakkk {
+        position: relative;
+        font-size: x-large;
+        color: grey;
+        z-index: 1; 
+        lefT: 5%;
+        top: 35%;
+        background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(0, 255, 0, 1), rgba(0, 0, 255, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+    
+}
+.no-underline {
+    text-decoration: none;
+    color: inherit; 
+   
+}
