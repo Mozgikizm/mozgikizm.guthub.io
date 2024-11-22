@@ -40,7 +40,9 @@ body {
 .forvibe {
     position: absolute;
     text-align: center;
-    left: 44%;
+    left: 44%; 
+    transition: background-color 0.5s ease;
+   
 }
 
 #lol {
@@ -48,9 +50,9 @@ body {
     background-color: black;
     color: rgb(255, 0, 0);
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
-    width: 170px;
+    width: 190px;
     height: 5vh;
     transition: background-color 0.5s ease;
 }
@@ -100,4 +102,8 @@ body {
     border-radius: 52px;
     text-align: center;
     margin-top: 0;
+}
+#lol:hover{
+  background-color: rgb(147, 78, 167);
+    transform: scale(1.0);
 }
