@@ -10,12 +10,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('akame.webp');
+    background-image: url('shit.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+  
 }
 
 .background::after {
@@ -40,7 +40,8 @@ body {
 .forvibe {
     position: absolute;
     text-align: center;
-    left: 44%; 
+    top: 800px;
+    left: 45%; 
     transition: background-color 0.5s ease;
    
 }
@@ -78,12 +79,13 @@ body {
 }
 
 .mutka {
-    position: relative;
+    position: absolute;
     font-weight: bold;
     font-size: xx-large;
     z-index: 1;
     color: rgb(0, 0, 0);
-    padding: 20px;
+   left:45%;
+    top: 250px;
     text-align: center;
     margin-top: 100px;
 }
@@ -104,6 +106,6 @@ body {
     margin-top: 0;
 }
 #lol:hover{
-  background-color: rgb(147, 78, 167);
+  background-color: rgb(0, 0, 0);
     transform: scale(1.0);
 }

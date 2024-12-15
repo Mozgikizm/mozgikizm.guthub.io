@@ -1,6 +1,7 @@
-body {
+body,html {
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 .background {
@@ -18,7 +19,7 @@ body {
 }
 .bro {
     display: block; 
-top: 100px;
+top: 575px;
     max-width: 25%; 
     height: auto;
     position: relative; 
@@ -35,3 +36,25 @@ h3 {
     
    
 }  
+.da {
+    z-index: 1;
+    position: relative;
+    bottom: 275px;
+
+    font-size:x-large;
+    background: linear-gradient(to left, rgb(255, 0, 0), rgb(255, 230, 0));
+   -webkit-background-clip: text;
+   font-weight: bold;
+color: transparent;
+}
+button {
+    position: absolute; 
+    top: 80%; 
+    left: 50%; 
+    font-weight: bold; 
+    font-size: 20px; 
+    color: black; 
+}
+button:hover {
+    background-color: red;
+}
