@@ -1,0 +1,113 @@
+/* Основной стиль */
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Фон */
+.background {
+    position: fixed;
+    z-index: 0;
+    background-image: url('skuchnu.webp');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background::after{
+    content: "";
+    position:absolute;
+    z-index:1;
+    background-color: rgba(0, 0, 0, 0.753);
+    height: 100%;
+    width: 100%;
+     
+}
+
+/* Контейнер */
+.container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Вступительный текст и кнопка */
+.intro p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+#startButton {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: rgb(43, 226, 156);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#startButton:hover {
+    background-color: rgb(30, 200, 140);
+}
+
+
+#game {
+    text-align: center;
+}
+
+#characterImage {
+    width: 1000px;
+    height: 500px;
+    margin: 20px 0;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#answerInput {
+    font-size: 1rem;
+    padding: 10px;
+    width: 300px;
+    border: 2px solid rgb(43, 226, 156);
+    border-radius: 5px;
+}
+
+#submitAnswer {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: rgb(43, 226, 156);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#submitAnswer:hover {
+    background-color: rgb(30, 200, 140);
+}
+
+/* Сообщение результата */
+#resultMessage {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+}
