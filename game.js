@@ -43,8 +43,10 @@ const characters = [
 
 let currentCharacter = null;
 let usedCharacters = [];
-let isAnswering = false;  
-let isCooldown = false;  
+let isAnswering = false;
+let isButtonCooldown = false;  
+let isEnterCooldown = false;   
+const BUTTON_COOLDOWN_TIME = 2500; 
 
 const startButton = document.getElementById("startButton");
 const introDiv = document.getElementById("introText");
@@ -84,21 +86,19 @@ function nextCharacter() {
     answerInput.value = "";
     resultMessage.textContent = "";
     resultMessage.style.display = "none";
-    isAnswering = true; 
+    isAnswering = true;
 }
 
 function checkAnswer() {
     const userAnswer = answerInput.value.trim();
 
-   
     if (userAnswer === "") {
         return;
     }
 
     if (!isAnswering) {
-        return;  
+        return;
     }
-
 
     const correctAnswerWords = currentCharacter.anime.toLowerCase().split(" ");
     const isCorrect = correctAnswerWords.some(word => userAnswer.toLowerCase().includes(word));
@@ -110,7 +110,14 @@ function checkAnswer() {
         resultMessage.style.padding = "5px 10px";
         resultMessage.style.borderRadius = "5px";
         resultMessage.style.display = "block";
-        setTimeout(nextCharacter, 2000);
+
+        submitAnswer.style.display = "none";
+
+setTimeout(() => {
+    submitAnswer.style.display = "block";
+}, 2500);
+        setTimeout(nextCharacter, 2500);
+     
     } else {
         resultMessage.textContent = "Неверно. Попробуйте ещё!";
         resultMessage.style.color = "red";
@@ -120,26 +127,38 @@ function checkAnswer() {
         resultMessage.style.display = "block";
     }
 
-    isAnswering = true; 
+    isAnswering = true;
 }
 
 submitAnswer.addEventListener("click", () => {
+    if ( answerInput.value.trim() === "") {
+        return;
+    }
+    submitAnswer.style.display = "none";
+   
+
+    setTimeout(() => {
+        submitAnswer.style.display = "block";
+   
+    }, 2500);
+
     checkAnswer();
 });
 
+
 answerInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-       
-        if (isCooldown || answerInput.value.trim() === "") {
+        if (isEnterCooldown || answerInput.value.trim() === "") {
+     
             return;
         }
 
-        isCooldown = true; 
-
-    
+        
+        isEnterCooldown = true;
         setTimeout(() => {
-            isCooldown = false; 
-        }, 3000);  
+      
+            isEnterCooldown = false;
+        }, BUTTON_COOLDOWN_TIME);
 
         checkAnswer();
     }
