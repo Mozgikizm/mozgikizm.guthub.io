@@ -23,7 +23,7 @@ const characters = [
     { img: "arima.jpg", anime: "Звёздное дитя"},
     { img: "sukuna.webp", anime: "Магическая Битва"},
     { img: "makima.png", anime: "Человек Бензопила"},
-    { img: "feitan.png", anime: "Хантер х Хантер"},
+    { img: "feitan.jpg", anime: "Хантер х Хантер"},
     { img: "aizu.webp", anime: "Может, я встречу тебя в подземелье"},
     { img: "ayato.jpg", anime: "Бездомный Бог"},
     { img: "satana.jpg", anime: "Сатана на подработке"},
@@ -32,13 +32,13 @@ const characters = [
     { img: "anos.jpg", anime: "Непризнанный школой владыка демонов"},
     { img: "sliz.webp", anime: "Убивая слизней 300 лет"},
     { img: "per.webp", anime: "Перестану Быть Героем"},
-    { img: "per.jpg", anime: "Клинок, рассекающий демонов "},
+    { img: "per.webp", anime: "Клинок, рассекающий демонов "},
     { img: "pov.jpg", anime: "Повелитель демонов 2099"},
     { img: "gab.jpg", anime: "Адский рай"},
     { img: "qu.jpg", anime: "Королева, ставшая причиной трагедии, сделает для народа всё, что в её силах"},
     { img: "lun.webp", anime: "Лунное путешествие в другой мир"},
     { img: "nero.jpg", anime: "Чёрный Клевер"},
-    { img: "cid.jpg", anime: "Когда плачут цикады"},
+    { img: "cid.webp", anime: "Когда плачут цикады"}
     
 ];
 
@@ -53,7 +53,7 @@ const answerInput = document.getElementById("answerInput");
 const submitAnswer = document.getElementById("submitAnswer");
 const resultMessage = document.getElementById("resultMessage");
 
-// Начало игры
+
 startButton.addEventListener("click", () => {
     introDiv.style.display = "none"; 
     gameDiv.style.display = "block"; 
@@ -73,13 +73,13 @@ function nextCharacter() {
 
     let randomIndex;
     do {
-        randomIndex = Math.floor(Math.random() * characters.length); // Рандомный индекс
+        randomIndex = Math.floor(Math.random() * characters.length); 
     } while (usedCharacters.includes(randomIndex)); 
 
     currentCharacter = characters[randomIndex];
     usedCharacters.push(randomIndex); 
 
-    // Отображаем выбранного персонажа
+ 
     characterImage.src = currentCharacter.img;
     characterImage.style.display = "block";
     answerInput.value = ""; 
@@ -87,14 +87,14 @@ function nextCharacter() {
     resultMessage.style.display = "none"; 
 }
 
-// Проверка ответа
-function checkAnswer() {
-    const userAnswer = answerInput.value.trim().toLowerCase(); // Приводим к нижнему регистру
 
-    // Приводим название аниме к нижнему регистру и разбиваем на слова
+function checkAnswer() {
+    const userAnswer = answerInput.value.trim().toLowerCase(); 
+
+
     const correctAnswerWords = currentCharacter.anime.toLowerCase().split(" ");
 
-    // Проверяем, содержится ли хотя бы одно слово из правильного ответа в введённом ответе
+   
     const isCorrect = correctAnswerWords.some(word => userAnswer.includes(word));
 
     if (isCorrect) {
@@ -104,7 +104,7 @@ function checkAnswer() {
         resultMessage.style.padding = "5px 10px"; 
         resultMessage.style.borderRadius = "5px"; 
         resultMessage.style.display = "block"; 
-        setTimeout(nextCharacter, 3000); // Через 2 сек. новый персонаж
+        setTimeout(nextCharacter, 3000); 
     } else {
         resultMessage.textContent = "Неверно. Попробуйте ещё!";
         resultMessage.style.color = "red"; 
@@ -115,12 +115,11 @@ function checkAnswer() {
     }
 }
 
-// Обработчик нажатия кнопки
+
 submitAnswer.addEventListener("click", checkAnswer);
 
-// Обработчик нажатия клавиши Enter
 answerInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        checkAnswer(); // Вызываем функцию проверки ответа при нажатии Enter
+        checkAnswer(); 
     }
 });
