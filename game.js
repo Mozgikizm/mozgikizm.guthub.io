@@ -44,6 +44,8 @@ const characters = [
 let currentCharacter = null;
 let usedCharacters = [];
 let isAnswering = false;  
+let isCooldown = false;  
+
 const startButton = document.getElementById("startButton");
 const introDiv = document.getElementById("introText");
 const gameDiv = document.getElementById("game");
@@ -88,6 +90,7 @@ function nextCharacter() {
 function checkAnswer() {
     const userAnswer = answerInput.value.trim();
 
+   
     if (userAnswer === "") {
         return;
     }
@@ -96,7 +99,7 @@ function checkAnswer() {
         return;  
     }
 
-   
+
     const correctAnswerWords = currentCharacter.anime.toLowerCase().split(" ");
     const isCorrect = correctAnswerWords.some(word => userAnswer.toLowerCase().includes(word));
 
@@ -117,7 +120,7 @@ function checkAnswer() {
         resultMessage.style.display = "block";
     }
 
-    isAnswering = false;  
+    isAnswering = true; 
 }
 
 submitAnswer.addEventListener("click", () => {
@@ -126,9 +129,18 @@ submitAnswer.addEventListener("click", () => {
 
 answerInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        if (answerInput.value.trim() === "") {
-            return;  
+       
+        if (isCooldown || answerInput.value.trim() === "") {
+            return;
         }
+
+        isCooldown = true; 
+
+    
+        setTimeout(() => {
+            isCooldown = false; 
+        }, 3000);  
+
         checkAnswer();
     }
 });
