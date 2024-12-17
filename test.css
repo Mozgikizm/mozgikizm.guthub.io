@@ -16,29 +16,43 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('test.jpg'); 
+    background-image: url('devilsee.jpg'); 
     background-size: cover;
     background-position: center;
+
     z-index: -1;
 }
 
-
+.background::after {
+    z-index:1;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+}
 .babku {
     z-index:1;
-    position: absolute;
+    position: fixed;
     top: 92%;
     font-size: large;
-    width: 100px;
-    height: 50px;
+    left: 48%;
+  
+
 
 }
 .fuck {
     background-color: white;
+    position: absolute;
     color: black;
+    font-weight: bold;
+    width: 75px;
+    border-radius: 25px;
+    font-size:large;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .test-container {
-    background-color: white;
+    background-color: rgb(231, 231, 231);
     padding: 15px;  
     border-radius: 20px;  
     width: 550px;  
@@ -47,9 +61,10 @@ body {
 
 }
 
+
 h1 {
     margin-bottom: 15px;  
-    color: purple;
+    color: black;
     font-size: large;  
 }
 
@@ -59,32 +74,36 @@ h1 {
 
 .question {
     margin-bottom: 15px;  
-    color: rgb(109, 17, 17);
+   
     font-size: small;  
 }
 
 label {
     display: block;
     margin: 5px 0;  
-    color: purple;
-    font-size: large;  
-    font-weight: 200;
+    color: rgb(70, 68, 75);
+    font-size: large;
+    font-weight: 700;
 }
 
 button {
+   
     display: block;
-    width: 100%;
+    width: 65%;
     padding: 8px; 
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(153, 191, 204);
+    color: black;
     border: none;
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 15px;
+    margin-left: 18%;
     cursor: pointer;
     margin-bottom: 15px;  
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: grey;
 }
 
 #result {
@@ -129,6 +148,7 @@ button:hover {
 #closeResult {
     background-color: red;
     color: white;
+    width: 101px;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -139,6 +159,6 @@ button:hover {
     background-color: darkred;
 }
  .fuck:hover {
-    background-color: purple;
+    background-color: rgb(95, 93, 93);
     transform: scale(1.1);
  }

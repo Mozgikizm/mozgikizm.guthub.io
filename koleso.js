@@ -7,7 +7,7 @@ const numSegmentsInput = document.getElementById('num-segments');
 const segmentLabelsInput = document.getElementById('segment-labels');
 
 let segments = ['Нет', 'Да '];
-let segmentColors = ['#ff0000', '#ff8800', '#008800', '#800080', '#ffcc00', '#00aaff', '#3333ff'];
+let segmentColors = ['#bacddd', '#89a9c5'];
 let totalSegments = segments.length;
 let currentAngle = 0;
 let spinSpeed = 0;
@@ -70,7 +70,7 @@ updateButton.addEventListener('click', () => {
     const labels = segmentLabelsInput.value.split(',').map(label => label.trim());
     
     if (labels.length !== numSegments) {
-        alert('Бро значения через запятые вводи. Пример"2блока= да,нет".');
+        alert('Некорректно. Примеры: 2блока = да, нет / 3 Блока = да, нет, да.');
         return;
     }
 

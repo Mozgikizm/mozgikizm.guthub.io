@@ -14,12 +14,19 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('ghoul.jpg');
+        background-image: url('glock.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         z-index: -1; 
     
+}
+.background::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
 }
 .wheel-container {
     position: relative;
@@ -38,6 +45,7 @@ body {
     height: 35px;
     background-color: white;
     color:black;
+    cursor: pointer;
 transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -47,7 +55,7 @@ transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 16px;
     border:none;
     border-radius: 5px;
-    background-color: darkred;
+    background-color: white;
     width: 120px;
     height: 5vh;
 }
@@ -55,7 +63,7 @@ transition: background-color 0.3s ease, transform 0.3s ease;
 .result {
     margin-top: 20px;
     font-size: 24px;
-    color: #4ef70b;
+    color: white;
     font-weight: bold;
 }
 
@@ -85,15 +93,15 @@ transition: background-color 0.3s ease, transform 0.3s ease;
     font-size: 16px;
  border-radius: 5px;
  border: none;
- background-color: darkred;
+ background-color: white;
 }
 #update-wheel:hover{
-    background-color: darkorange;
+    background-color: grey;
 }
 #spin-button:hover {
-    background-color: darkorange;
+    background-color: grey;
 }
 .nah:hover {
-    background-color: purple;
+    background-color: grey;
     transform: scale(1.1);
 }
