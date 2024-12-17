@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 20px;
+    padding: 30px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -48,10 +48,11 @@ body {
 
 #lol {
     padding: 10px 20px;
-    background-color: black;
-    color: rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: lightblue;
+    font-size:large;
     border: none;
-    border-radius: 0px;
+    border-radius: 15px;
     cursor: pointer;
     width: 190px;
     height: 5vh;
@@ -63,18 +64,18 @@ body {
 }
 
 .menu-button {
-    background-color: black;
-    color: purple;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: lightblue;;
     font-size: large;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .menu-button:hover {
-    background-color: rgb(147, 78, 167);
+    background-color:rgb(51, 47, 47);
     transform: scale(1.1);
 }
 
@@ -97,15 +98,16 @@ body {
     position: absolute;
     top: 95%;
     left: 37%;
+    text-shadow: 5px 5px 3px rgb(0, 0, 0);
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+   color: rgba(182, 217, 240, 0.6);
     padding: 10px;
-    text-shadow: 1px 1px 2px rgb(247, 4, 4);
+  
     border-radius: 52px;
     text-align: center;
     margin-top: 0;
 }
 #lol:hover{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(51, 47, 47);
     transform: scale(1.0);
 }
