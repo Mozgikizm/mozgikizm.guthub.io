@@ -85,7 +85,24 @@
     height: 5vh;
     transition: background-color 0.5s ease;
 }
+.joke{
+    z-index: 1;
+    position: absolute;
+    top: 95%;
+    left: 55%;
+}
+.lolka {
+    background-color: white;
+    color:black;
+    width: 100px;
+    height: 30px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 
+}
 #play-button:hover {
     background-color: rgb(51, 0, 80);
+}
+.lolka:hover {
+    background-color: purple;
+    transform: scale(1.1);
 }

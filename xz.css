@@ -25,3 +25,21 @@ html, body {
     top: 35%;
     color: transparent; 
   }
+  .mda {
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 48%;
+  
+  }
+  .br {
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .br:hover {
+    background-color: purple;
+    transform: scale(1.1);
+  }

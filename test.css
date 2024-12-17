@@ -22,6 +22,21 @@ body {
     z-index: -1;
 }
 
+
+.babku {
+    z-index:1;
+    position: absolute;
+    top: 92%;
+    font-size: large;
+    width: 100px;
+    height: 50px;
+
+}
+.fuck {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 .test-container {
     background-color: white;
     padding: 15px;  
@@ -29,6 +44,7 @@ body {
     width: 550px;  
     text-align: center;
     overflow: auto;  
+
 }
 
 h1 {
@@ -122,3 +138,7 @@ button:hover {
 #closeResult:hover {
     background-color: darkred;
 }
+ .fuck:hover {
+    background-color: purple;
+    transform: scale(1.1);
+ }

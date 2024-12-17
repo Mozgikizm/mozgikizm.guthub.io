@@ -27,6 +27,20 @@ body {
     
 }
 
+.pump {
+    z-index: 1;
+    position: absolute;
+    top: 95%;
+
+}
+.nah {
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    color:black;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 #spin-button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -78,4 +92,8 @@ body {
 }
 #spin-button:hover {
     background-color: darkorange;
+}
+.nah:hover {
+    background-color: purple;
+    transform: scale(1.1);
 }

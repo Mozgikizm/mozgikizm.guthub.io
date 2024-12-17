@@ -37,7 +37,18 @@ button {
     cursor: pointer;
 }
 
-
+.suka {
+    z-index: 1;
+    position:absolute;
+    top: 83%;
+}
+.bro {
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
 
 #videoContainer {
@@ -73,4 +84,9 @@ button {
     height: 100vh;
     width: 100%;
     position: absolute;
+}
+
+.bro:hover {
+    background-color: purple;
+    transform: scale(1.1);
 }

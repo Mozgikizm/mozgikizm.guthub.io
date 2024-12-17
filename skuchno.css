@@ -1,4 +1,4 @@
-/* Основной стиль */
+
 body, html {
     margin: 0;
     height: 100%;
@@ -7,7 +7,7 @@ body, html {
     overflow: hidden;
 }
 
-/* Фон */
+
 .background {
     position: fixed;
     z-index: 0;
@@ -28,7 +28,7 @@ body, html {
      
 }
 
-/* Контейнер */
+
 .container {
     position: relative;
     z-index: 1;
@@ -40,14 +40,34 @@ body, html {
     text-align: center;
 }
 
-/* Вступительный текст и кнопка */
+
+.fucker {
+    z-index: 1;
+    position: absolute;
+    top: 85%;
+    left: 48%;
+}
+.bro {
+    width: 100px;
+    border-radius: 20px;
+    height: 35px;
+cursor: pointer;
+font-size: large;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 .intro p {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
-
+.bro:hover {
+    background-color: purple;
+     transform: scale(1.1);
+ }
+ 
 #startButton {
     font-size: 1.5rem;
     padding: 15px 30px;
@@ -104,10 +124,11 @@ body, html {
     background-color: rgb(30, 200, 140);
 }
 
-/* Сообщение результата */
+
 #resultMessage {
     font-size: 1.2rem;
     margin-top: 15px;
     font-size: xx-large;
     font-weight: bold;
 }
+
