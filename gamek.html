@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Quiz</title>
+    <link rel="stylesheet" href="gamek.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="lyalyaa" id="lyalya">
+            <p>Вводить названия без: . / ` ' - = + и прочих знаков</p>
+           </div>
+           <div id="bonusQuestionDiv" style="display:none;">
+            <p id="bonusQuestionText"></p>
+            <input type="number" id="bonusQuestionInput" placeholder="Введите год" />
+            <button id="bonusSubmitButton">Ответить</button>
+        </div>
+        <div class="intro" id="introText">
+            <p>После нажатия на кнопку начнется игра, где нужно угадать с какой игры персонаж</p>
+            <button id="startButton">Начать</button>
+        </div>
+        <div id="game" style="display: none;">
+            <img id="characterImage" src="" alt="Персонаж">
+            <div class="input-area">
+                <input type="text" id="answerInput" placeholder="Введите название игры(с частью)">
+                <button id="submitAnswer">Ответить</button>
+            </div>
+            <p id="resultMessage"></p>
+          
+            <div id="hintButtons">
+                <button id="hintFirstLetter">Первая буква (10 монет)</button>
+                <button id="hintFullName">Полное название игры (40 монет)</button>
+            </div>
+        </div>
+    </div>
+    <div id="characterCount"></div>
+    <audio id="correctSound" src="game/kogdato.mp3"></audio>
+ 
+
+    <div class="coins">
+        <p>Монеты: <span id="coinDisplay">0</span></p>
+    </div>
+
+    <script src="gamek.js"></script>
+    <div class="fucker">
+        <form action="Teguainb.html" method="get">
+            <button class="bro" type="submit">main</button>
+        </form>
+    </div>
+</body>
+</html>

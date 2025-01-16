@@ -57,7 +57,17 @@ font-size: large;
     color: black;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+#lyalya {
+    position: relative;
+    bottom: 25vh;
+}
+.lyalyaa p {
+    font-size:2.5rem;
+    font-weight:bold;
+    text-shadow: 5px 6px 1px rgba(0, 0, 0, 0.6);
+    color: grey;
+  
+}
 .intro p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -138,3 +148,74 @@ font-size: large;
     font-size: xx-large;
     font-weight: bold;
 }
+
+
+.coin-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+}
+
+#coinsDisplay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+#hintArea {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#hintText button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: rgb(43, 226, 156);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hintText button:hover {
+    background-color: rgb(30, 200, 140);
+}
+
+#hintText button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+.coins {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#hintButtons {
+    margin-top: 20px;
+}
+
+#hintFirstLetter,
+#hintFullName {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(43, 226, 156);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#hintFirstLetter:hover,
+#hintFullName:hover {
+    background-color: rgb(30, 200, 140);
+}
+

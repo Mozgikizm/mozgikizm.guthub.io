@@ -59,6 +59,11 @@ const resultMessage = document.getElementById("resultMessage");
 startButton.addEventListener("click", () => {
     introDiv.style.display = "none";
     gameDiv.style.display = "block";
+    const mainButton = document.querySelector('.fucker');  
+    if (mainButton) {
+        mainButton.style.display = "none";  
+    }
+    
     nextCharacter();
 });
 
