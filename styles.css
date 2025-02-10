@@ -68,7 +68,7 @@ body {
 .helper .helper-text {
     visibility: hidden;
     width: 25vh;
-    background-color: rgb(68, 68, 68);
+ 
     color: lightblue;
     text-align: center;
     padding: 1vh;
