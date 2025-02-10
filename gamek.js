@@ -57,7 +57,7 @@ const characters = [
 { img: "game/rdr.jpg", bro: "Red Dead Redemption", year: 2010 },
 { img: "game/mine.jpg", bro: "Minecraft", year: 2011 },
 { img: "game/afss.jpg", bro: "No Mans Sky", year: 2016 },
-{ img: "game/lz.png", bro: "Tears of the Kingdom", year: 2023 },
+{ img: "game/lz.png", bro: "Zelda Tears of the Kingdom", year: 2023 },
 { img: "game/bynt.jpg", bro: "Bayonetta 2", year: 2014 },
 { img: "game/hrz.jpg", bro: "Horizon Forbidden West", year: 2022 },
 { img: "game/bb.webp", bro: "Black Myth Wukong", year: 2024 },
