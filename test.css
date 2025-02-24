@@ -52,13 +52,21 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .test-container {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255,0.5);
     padding: 15px;  
     border-radius: 20px;  
+    backdrop-filter: blur(3px);
     width: 550px;  
     text-align: center;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    transition: box-shadow 0.2s ease-in-out;
     overflow: auto;  
+    transition: backdrop-filter 0.3s ease-in-out;
 
+}
+.test-container:hover{
+    box-shadow: 0 0 20px rgba(255,255,255,0.6);
+   backdrop-filter:blur(50px);
 }
 
 

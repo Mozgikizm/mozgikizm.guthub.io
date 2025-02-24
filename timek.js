@@ -1,7 +1,7 @@
 function updateDateTime() {
     const now = new Date();
     const options = {
-        timeZone: 'Europe/Moscow',
+        timeZone: 'Asia/Yekaterinburg',
         hour12: false, 
         year: 'numeric',
         month: '2-digit',
